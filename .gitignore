@@ -1,3 +1,8 @@
+# IDEA
+.idea
+target
+.iml
+
 # Compiled class file
 *.class
 
@@ -21,3 +26,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/changgou-parent/changgou-common-db/*.iml
+/changgou-parent/changgou-common/*.iml
+/changgou-parent/changgou-eureka/*.iml
+/changgou-parent/changgou-gateway/*.iml
+/changgou-parent/changgou-service-api/*.iml
+/changgou-parent/changgou-service/*.iml
+/changgou-parent/changgou-web/*.iml
