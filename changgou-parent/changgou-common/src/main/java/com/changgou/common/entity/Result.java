@@ -1,6 +1,5 @@
-package com.changgou.common.utils;
+package com.changgou.common.entity;
 
-import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 

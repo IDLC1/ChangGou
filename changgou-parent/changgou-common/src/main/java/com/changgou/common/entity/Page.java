@@ -1,4 +1,4 @@
-package com.changgou.common.utils;
+package com.changgou.common.entity;
 
 import java.io.Serializable;
 import java.util.List;

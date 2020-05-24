@@ -12,6 +12,9 @@
     <description>
         所有微服务工程的api抽取
     </description>
+    <modules>
+        <module>changgou-service-goods-api</module>
+    </modules>
     <artifactId>changgou-service-api</artifactId>
     <packaging>pom</packaging>
 
