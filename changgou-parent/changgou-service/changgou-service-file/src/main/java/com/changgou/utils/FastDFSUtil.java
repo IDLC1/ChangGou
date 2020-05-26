@@ -1,15 +1,12 @@
 package com.changgou.utils;
 
 import com.changgou.file.FastDFSFile;
+import lombok.extern.slf4j.Slf4j;
 import org.csource.common.MyException;
 import org.csource.common.NameValuePair;
-import org.csource.fastdfs.ClientGlobal;
-import org.csource.fastdfs.StorageClient;
-import org.csource.fastdfs.TrackerClient;
-import org.csource.fastdfs.TrackerServer;
+import org.csource.fastdfs.*;
 import org.springframework.core.io.ClassPathResource;
 
-import javax.sound.midi.Track;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,6 +14,7 @@ import java.util.Date;
 /**
  * 实现 FastDFS 文件管理
  */
+@Slf4j
 public class FastDFSUtil {
 
     /**
@@ -38,8 +36,9 @@ public class FastDFSUtil {
     /**
      * 文件上传
      * @param fastDFSFile 上传的文件信息封装
+     * @return
      */
-    public static void upload(FastDFSFile fastDFSFile) throws Exception{
+    public static String[] upload(FastDFSFile fastDFSFile) throws Exception{
         // 创建一个 Tracker 访问的客户端对象 TrackerClient
         TrackerClient trackerClient = new TrackerClient();
         // 通过 TrackerClient 访问 TrackerServer 服务，获取连接信息
@@ -60,7 +59,21 @@ public class FastDFSUtil {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         meta_list[1] = new NameValuePair("时间", sdf.format(date));
         meta_list[2] = new NameValuePair("作者", fastDFSFile.getAuthor());
-        storageClient.upload_file(fastDFSFile.getContent(), fastDFSFile.getExt(), meta_list);
+        String[] uploads = storageClient.upload_file(fastDFSFile.getContent(), fastDFSFile.getExt(), meta_list);
+        return uploads;
     }
 
+    public static FileInfo getFileInfo(String groupName, String remoteFileName) throws Exception {
+        // 创建一个 TrackerClient 对象，通过 TrackerClient 对象访问 TrackerServer
+        TrackerClient trackerClient = new TrackerClient();
+        TrackerServer connection = trackerClient.getConnection();
+        StorageClient storageClient = new StorageClient(connection, null);
+        return storageClient.get_file_info(groupName, remoteFileName);
+    }
+
+    public static void main(String[] args) throws Exception {
+        FileInfo fileInfo = getFileInfo("group1", "wKjqh17NNBmAfMakAABt9WLqiVA598.jpg");
+            log.info("ip = " + fileInfo.getSourceIpAddr());
+            log.info("size = " + fileInfo.getFileSize());
+    }
 }
