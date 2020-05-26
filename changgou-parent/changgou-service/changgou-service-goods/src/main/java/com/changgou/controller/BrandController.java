@@ -51,9 +51,6 @@ public class BrandController {
 
     @PostMapping(value = "/search/{page}/{size}")
     public Result<PageInfo<Brand>> findPage(@RequestBody Brand brand,@PathVariable(value = "page")Integer page, @PathVariable(value = "size") Integer size) {
-        // TODO： tom
-        int i = 10/0;
-
         PageInfo<Brand> pageInfo = brandService.pageSearchAndCondition(brand, page, size);
         return new Result<PageInfo<Brand>>(true, StatusCode.OK, "搜索分页成功", pageInfo);
     }
