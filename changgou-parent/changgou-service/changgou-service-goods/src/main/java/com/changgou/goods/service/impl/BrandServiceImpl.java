@@ -23,7 +23,6 @@ public class BrandServiceImpl implements BrandService {
     @Autowired
     private BrandMapper brandMapper;
 
-
     /**
      * Brand条件+分页查询
      * @param brand 查询条件
@@ -146,5 +145,10 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public List<Brand> findAll() {
         return brandMapper.selectAll();
+    }
+
+    @Override
+    public List<Brand> findByCategory(Integer categoryId) {
+        return brandMapper.findBycategory(categoryId);
     }
 }

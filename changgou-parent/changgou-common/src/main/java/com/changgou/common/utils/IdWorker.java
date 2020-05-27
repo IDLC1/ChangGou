@@ -1,4 +1,4 @@
-package com.changgou.common.entity;
+package com.changgou.common.utils;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

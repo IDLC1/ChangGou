@@ -11,6 +11,7 @@
 
     <description>公共工程</description>
     <artifactId>changgou-common</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!--web起步依赖-->

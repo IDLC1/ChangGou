@@ -167,8 +167,8 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<Category> findByParentId(Integer pid) {
         // 根据父id 查询
-        
-
-        return categoryMapper.findByParentId(pid);
+        Category category = new Category();
+        category.setParentId(pid);
+        return categoryMapper.select(category);
     }
 }
