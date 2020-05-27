@@ -1,6 +1,5 @@
 package com.changgou.file;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;

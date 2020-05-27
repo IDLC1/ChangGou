@@ -21,7 +21,8 @@ public class FileUploadController {
                 StringUtils.getFilenameExtension(file.getOriginalFilename())
         );
         // 调用 FastDFSUtil 工具类将文件传入到 FastDFS 中
-        FastDFSUtil.upload(fastDFSFile);
-        return new Result(true, StatusCode.OK, "上传成功");
+        String[] uploads = FastDFSUtil.upload(fastDFSFile);
+        String url = FastDFSUtil.getTrackerInfo() + "/" + uploads[0] + "/" + uploads[1];
+        return new Result(true, StatusCode.OK, "上传成功", url);
     }
 }

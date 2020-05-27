@@ -39,6 +39,31 @@ public class Result<T> {
         this.message = "操作成功!";
     }
 
+    public static Result ok(String msg) {
+        Result result = new Result();
+        result.setFlag(true);
+        result.setCode(StatusCode.OK);
+        result.setMessage(msg);
+        return result;
+    }
+
+    public static Result ok(String msg, Object data) {
+        Result result = new Result();
+        result.setFlag(true);
+        result.setCode(StatusCode.OK);
+        result.setMessage(msg);
+        result.setData(data);
+        return result;
+    }
+
+    public static Result error(String msg) {
+        Result result = new Result();
+        result.setFlag(false);
+        result.setCode(StatusCode.ERROR);
+        result.setMessage(msg);
+        return result;
+    }
+
     public boolean isFlag() {
         return flag;
     }
