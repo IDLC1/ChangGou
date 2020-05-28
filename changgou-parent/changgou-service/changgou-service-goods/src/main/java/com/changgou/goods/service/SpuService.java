@@ -80,4 +80,28 @@ public interface SpuService {
      * @return
      */
     Goods findGoodsById(Long id);
+
+    /**
+     * 商品审核
+     * @param spuId
+     */
+    void audit(Long spuId);
+
+    /**
+     * 商品下架
+     * @param spuId
+     */
+    void pull(Long spuId);
+
+    /**
+     * 商品上架
+     * @param spuId
+     */
+    void put(Long spuId);
+
+    /**
+     * 批量上架
+     * @param ids
+     */
+    int putMany(Long[] ids);
 }

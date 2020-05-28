@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -241,12 +242,25 @@ public class SpuServiceImpl implements SpuService {
     @Override
     public void saveGoods(Goods goods) {
         Spu spu = goods.getSpu();
-        spu.setId(idWorker.nextId());
-        spuMapper.insertSelective(spu);
+
+        // 若是增加操作
+        if (spu.getId() == null) {
+            spu.setId(idWorker.nextId());
+            spuMapper.insertSelective(spu);
+        } else {
+            // 修改操作
+            spuMapper.updateByPrimaryKeySelective(spu);
+
+            // 删除之前的 List<Sku>，重新写入
+            Sku sku = new Sku();
+            sku.setSpuId(spu.getId());
+            skuMapper.delete(sku);
+        }
 
         Category category = categoryMapper.selectByPrimaryKey(spu.getCategory3Id());
         Brand brand = brandMapper.selectByPrimaryKey(spu.getBrandId());
 
+        // 写入新的sku
         List<Sku> list = goods.getSkuList();
         for (Sku sku : list) {
             sku.setId(idWorker.nextId());
@@ -293,5 +307,78 @@ public class SpuServiceImpl implements SpuService {
         goods.setSpu(spu);
         goods.setSkuList(list);
         return goods;
+    }
+
+    @Override
+    public void audit(Long spuId) {
+        // 查询商品
+        Spu spu = spuMapper.selectByPrimaryKey(spuId);
+
+        // 判断商品是否符合审核条件
+        if (spu.getIsDelete().equalsIgnoreCase("1")) {
+            throw new RuntimeException("不能对已删除的商品进行审核");
+        }
+
+        // 修改状态
+        spu.setStatus("1"); // 审核通过
+        spu.setIsMarketable("1"); // 上架
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
+     * 商品下架
+     * @param spuId
+     */
+    @Override
+    public void pull(Long spuId) {
+        // 查询商品
+        Spu spu = spuMapper.selectByPrimaryKey(spuId);
+
+        // 判断商品是否符合审核条件
+        if (spu.getIsDelete().equalsIgnoreCase("1")) {
+            throw new RuntimeException("不能对已删除的商品进行审核");
+        }
+
+        // 修改状态
+        spu.setIsMarketable("0"); // 下架
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
+     * 商品上架
+     * @param spuId
+     */
+    @Override
+    public void put(Long spuId) {
+        // 查询商品
+        Spu spu = spuMapper.selectByPrimaryKey(spuId);
+
+        // 判断商品是否符合审核条件
+        if (spu.getIsDelete().equalsIgnoreCase("1")) {
+            throw new RuntimeException("不能对已删除的商品进行审核");
+        }
+
+        // 修改状态
+        spu.setIsMarketable("1"); // 上架
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
+     * 批量上架
+     * @param ids
+     */
+    @Override
+    public int putMany(Long[] ids) {
+        Example example = new Example(Spu.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andIn("id", Arrays.asList(ids));
+        criteria.andEqualTo("isDelete", "0");
+        criteria.andEqualTo("status", "1");
+
+        // 准备要修改的数据
+        Spu spu = new Spu();
+        spu.setIsMarketable("1"); // 上架
+        int count = spuMapper.updateByExampleSelective(spu, example);
+        return count;
     }
 }

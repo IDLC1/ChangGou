@@ -147,8 +147,58 @@ public class SpuController {
     }
 
     @GetMapping("/goods/{id}")
-    public Result<Goods> findGoodsById(@PathVariable("id") Long spuId) {
+    public Goods findGoodsById(@PathVariable("id") Long spuId) {
         Goods goods = spuService.findGoodsById(spuId);
-        return new Result<Goods>(true, StatusCode.OK,"查询成功",goods) ;
+        return goods;
+    }
+
+    /**
+     * 商品的增加和修改
+     * @param goods
+     * @return
+     */
+    @PostMapping("/save}")
+    public Result saveGoods(@RequestBody Goods goods) {
+        spuService.saveGoods(goods);
+        return  new Result(true, StatusCode.OK,"商品增加成功");
+    }
+
+    @PutMapping("/audit/{id}")
+    public Result audit(@PathVariable("id") Long spuId) {
+        spuService.audit(spuId);
+        return  new Result(true, StatusCode.OK,"审核通过");
+    }
+
+    /**
+     * 商品下架
+     * @param spuId
+     * @return
+     */
+    @PutMapping("/pull/{id}")
+    public Result pull(@PathVariable("id") Long spuId) {
+        spuService.pull(spuId);
+        return  new Result(true, StatusCode.OK,"下架成功");
+    }
+
+    /**
+     * 商品上架
+     * @param spuId
+     * @return
+     */
+    @PutMapping("/put/{id}")
+    public Result put(@PathVariable("id") Long spuId) {
+        spuService.put(spuId);
+        return  new Result(true, StatusCode.OK,"上架成功");
+    }
+
+    /**
+     * 批量上架
+     * @param ids
+     * @return
+     */
+    @PutMapping("/put/many")
+    public Result putMany(@RequestBody Long[] ids) {
+        int count = spuService.putMany(ids);
+        return  new Result(true, StatusCode.OK,"上架" + count + "个商品");
     }
 }
