@@ -15,6 +15,7 @@
     <modules>
         <module>changgou-service-goods</module>
         <module>changgou-service-file</module>
+        <module>changgou-service-canal</module>
     </modules>
     <artifactId>changgou-service</artifactId>
     <packaging>pom</packaging>
