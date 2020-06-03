@@ -1,11 +1,14 @@
 server:
-  port: 18083
+  port: 18082
 spring:
   application:
     name: canal
-eureku:
+  redis:
+    host: 192.168.47.142
+    port: 6379
+eureka:
   client:
-    server-url:
+    service-url:
       defaultZone: http://127.0.0.1:7001/eureka
   instance:
     prefer-ip-address: true
@@ -25,5 +28,5 @@ canal:
   client:
     instances:
       example:
-        host: 192.168.234.135
+        host: 192.168.47.142
         port: 11111

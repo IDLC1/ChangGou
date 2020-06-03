@@ -1,11 +1,11 @@
 server:
-  port: 18081
+  port: 18084
 spring:
   application:
-    name: goods
+    name: content
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.47.142:3306/changgou_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.47.142:3306/changgou_content?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 123456
 eureka:
@@ -26,9 +26,3 @@ hystrix:
           enabled: true
         isolation:
           strategy: SEMAPHORE
-# 使用通用Mapper可以不用配置
-#mybatis:
-#  configuration:
-#    map-underscore-to-camel-case: true
-#  mapper-locations: classpath:mapper/*Mapper.xml
-#  type-aliases-package: com.changgou.goods.pojo
