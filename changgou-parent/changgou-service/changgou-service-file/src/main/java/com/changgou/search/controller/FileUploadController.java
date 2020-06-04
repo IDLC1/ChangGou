@@ -1,4 +1,4 @@
-package com.changgou.controller;
+package com.changgou.search.controller;
 
 import com.changgou.common.entity.Result;
 import com.changgou.common.entity.StatusCode;
