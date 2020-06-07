@@ -25,6 +25,9 @@ public class SkuController {
      */
     @GetMapping("/list")
     public String search(@RequestParam(required = false) Map<String,String> searchMap, Model model)  {
+        // 替换特殊字符
+        handlerSearchMap(searchMap);
+
         // 调用搜索服务
         Map<String, Object> map = skuFeign.search(searchMap);
         model.addAttribute("result", map);
@@ -44,6 +47,20 @@ public class SkuController {
         model.addAttribute("url", urls[0]);
         model.addAttribute("sortUrl", urls[1]);
         return "search";
+    }
+
+    /**
+     * 替换特殊字符
+     * @param searchMap
+     */
+    private void handlerSearchMap(Map<String, String> searchMap) {
+        if (searchMap != null) {
+            for (Map.Entry<String, String> entry : searchMap.entrySet()) {
+                if (entry.getKey().startsWith("spec_")) {
+                    entry.setValue(entry.getValue().replace("+", "%2B"));
+                }
+            }
+        }
     }
 
 
@@ -73,7 +90,7 @@ public class SkuController {
                 if (key.equalsIgnoreCase("sortField") || key.equalsIgnoreCase("sortRule")) {
                     continue;
                 }
-                sortUrl = key + "=" + value + "&";
+                sortUrl += key + "=" + value + "&";
             }
 
             // 去掉最末尾的&
