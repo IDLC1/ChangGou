@@ -10,9 +10,43 @@
     <modelVersion>4.0.0</modelVersion>
 
     <description>
-        所有涉及到页面渲染的微服务工程
+        所有涉及到页面渲染的微服务工程，需要在该工程中写页面的服务，例如：商品详情页和商品搜索页面渲染
     </description>
+    <modules>
+        <module>changgou-web-search</module>
+    </modules>
     <artifactId>changgou-web</artifactId>
     <packaging>pom</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!--eureka-client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!--openfeign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!-- mq -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

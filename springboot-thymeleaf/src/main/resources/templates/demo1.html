@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- 引入themeleaf标签 -->
+c
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>1321231212312312asd12312312asdasd!</div>
+    <!--
+        Thymeleaf标签使用，需要在指定的标签上使用 Thyemelaf 相关的语法
+        th:text=""  输出文本内容
+     -->
+    <div th:text="${message}"></div>
+
+    <form id="login-form" th:action="@{/test/hello}">
+        <button>提交</button>
+    </form>
+
+<table>
+    <tr>
+        <th>下标</th>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>地址</th>
+    </tr>
+    <!--
+        第一个参数 user: 当前被循环的对象 item
+        第二个参数 state: 当前被循环对象的状态记录，如下标、第几条
+    -->
+    <tr th:each="user,state:${users}">
+        <td th:text="${state.count}"></td>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.address}"></td>
+    </tr>
+</table>
+
+<div>
+    <!--
+        读取map的种方式
+        1. 知道 map 的key,根据 key 直接获取数据
+        2. 不知道 key，使用循环方式获取key，然后获取数据
+    -->
+    <h1>方式一</h1>
+    <div>获取num的值：<span th:text="${dataMap.num}"></span></div>
+    <div>获取name的值：<span th:text="${dataMap.name}"></span></div>
+    <div>获取address的值：<span th:text="${dataMap.address}"></span></div>
+
+    <h1>方式二</h1>
+    <div th:each="item:${dataMap}">
+        <div><span th:text="${item.key}"></span><span th:text="${item.value}"></span></div>
+    </div>
+</div>
+
+<h1>时间</h1>
+    <span th:text="${#dates.format(now, 'yyyy-MM-dd HH:mm:ss')}"></span>
+
+<h1>if 条件判断</h1>
+    <div>
+        <span th:if="${age>18}">成年人</span>
+    </div>
+
+<h1>引入公共模块</h1>
+<div th:include="footer::bar"></div>
+
+</body>
+</html>
