@@ -5,12 +5,12 @@ import com.alibaba.otter.canal.protocol.CanalEntry;
 import com.changgou.common.entity.Result;
 import com.changgou.content.feign.ContentFeign;
 import com.changgou.content.pojo.Content;
+import com.changgou.web.feign.ItemFeign;
 import com.xpand.starter.canal.annotation.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,6 +22,9 @@ public class CanalDataEventListener {
 
     @Autowired
     private ContentFeign contentFeign;
+
+    @Autowired
+    private ItemFeign itemFeign;
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
@@ -80,6 +83,51 @@ public class CanalDataEventListener {
         }
         return categoryId;
     }
+
+    /**
+     * @ListenPoint 监听spu的变化，动态增删静态页面
+     * @param eventType 当前操作的类型： 增加数据
+     * @param rowData 发生变更的一行数据
+     */
+    @ListenPoint(
+            destination = "example", // 指定Canal实例的地址
+            schema = {"changgou_goods"}, // 指定监听的数据库
+            table = {"tb_spu"}, // 指定监控的表
+            eventType = {
+                    CanalEntry.EventType.DELETE,
+                    CanalEntry.EventType.UPDATE,
+                    CanalEntry.EventType.INSERT} // 监听类型
+    )
+    public void onEventCustomSpu(CanalEntry.EventType eventType, CanalEntry.RowData rowData) {
+        log.info("Canal 微服务 监控到了SPU数据变化~");
+        if (eventType == CanalEntry.EventType.DELETE) {
+            Long spuId = 0L;
+            List<CanalEntry.Column> beforeColumnsList = rowData.getBeforeColumnsList();
+            for (CanalEntry.Column column : beforeColumnsList) {
+                if (column.getName().equals("id")) {
+                    spuId = Long.valueOf(column.getValue()); //spuid
+                    break;
+                }
+            }
+            //todo 删除静态页
+            log.info("Canal 微服务 删除 spu id = " + spuId);
+
+        }else {
+            //新增 或者 更新
+            List<CanalEntry.Column> afterColumnsList = rowData.getAfterColumnsList();
+            Long spuId = 0L;
+            for (CanalEntry.Column column : afterColumnsList) {
+                if (column.getName().equals("id")) {
+                    spuId = Long.valueOf(column.getValue());
+                    break;
+                }
+            }
+            //更新 生成静态页
+            itemFeign.createHtml(spuId);
+            log.info("Canal 微服务 新增 spu id = " + spuId);
+        }
+    }
+
 //    /**
 //     * @ListenPoint 自定义监听
 //     * @param eventType 当前操作的类型： 增加数据

@@ -1,5 +1,6 @@
 package com.changgou.goods.service;
 
+import com.changgou.common.entity.Result;
 import com.changgou.goods.pojo.Sku;
 import com.github.pagehelper.PageInfo;
 
@@ -66,4 +67,10 @@ public interface SkuService {
      * @return
      */
     List<Sku> findAll();
+
+    /***
+     * 根据spuid查询sku列表
+     * @return
+     */
+    List<Sku> findListBySpuId(Long spuId);
 }

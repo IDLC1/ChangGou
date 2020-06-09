@@ -1,5 +1,6 @@
 package com.changgou.goods.service.impl;
 
+import com.changgou.common.entity.Result;
 import com.changgou.goods.dao.SkuMapper;
 import com.changgou.goods.pojo.Sku;
 import com.changgou.goods.service.SkuService;
@@ -202,5 +203,13 @@ public class SkuServiceImpl implements SkuService {
     @Override
     public List<Sku> findAll() {
         return skuMapper.selectAll();
+    }
+
+    @Override
+    public List<Sku> findListBySpuId(Long spuId) {
+        Sku sku = new Sku();
+        sku.setSpuId(spuId);
+        Example example = createExample(sku);
+        return skuMapper.selectByExample(example);
     }
 }

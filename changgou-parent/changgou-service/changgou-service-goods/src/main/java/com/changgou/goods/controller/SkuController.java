@@ -144,4 +144,16 @@ public class SkuController {
         List<Sku> list = skuService.findAll();
         return new Result<List<Sku>>(true, StatusCode.OK,"查询成功",list) ;
     }
+
+    /***
+     * 根据spu的ID查询数据
+     * @return
+     */
+    @ApiOperation(value = "查询所有Sku",notes = "查询所Sku有方法详情",tags = {"SkuController"})
+    @GetMapping("/list/{spuId}")
+    public Result<List<Sku>> findSkuListBySpuId(@PathVariable("spuId") Long spuId){
+        //调用SkuService实现查询所有Sku
+        List<Sku> list = skuService.findListBySpuId(spuId);
+        return new Result<List<Sku>>(true, StatusCode.OK,"查询成功",list) ;
+    }
 }
