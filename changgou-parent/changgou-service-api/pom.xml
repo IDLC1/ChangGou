@@ -17,6 +17,8 @@
         <module>changgou-service-content-api</module>
         <module>changgou-service-search-api</module>
         <module>changgou-service-web-api</module>
+        <module>changgou-service-user-api</module>
+        <module>changgou-service-business-api</module>
     </modules>
     <artifactId>changgou-service-api</artifactId>
     <packaging>pom</packaging>

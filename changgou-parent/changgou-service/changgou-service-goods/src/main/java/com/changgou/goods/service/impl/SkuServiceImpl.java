@@ -1,6 +1,5 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.common.entity.Result;
 import com.changgou.goods.dao.SkuMapper;
 import com.changgou.goods.pojo.Sku;
 import com.changgou.goods.service.SkuService;

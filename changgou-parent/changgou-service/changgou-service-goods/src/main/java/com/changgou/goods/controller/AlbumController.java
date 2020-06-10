@@ -1,10 +1,10 @@
 package com.changgou.goods.controller;
 
-import com.changgou.goods.pojo.Album;
-import com.changgou.goods.service.AlbumService;
-import com.github.pagehelper.PageInfo;
 import com.changgou.common.entity.Result;
 import com.changgou.common.entity.StatusCode;
+import com.changgou.goods.service.AlbumService;
+import com.changgou.goods.pojo.Album;
+import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Author: tom
  * @Create: 2020-06-09 17:15
  **/
-@FeignClient("item")
+@FeignClient(name = "page")
 @RequestMapping("/item")
 public interface ItemFeign {
 
@@ -23,5 +23,6 @@ public interface ItemFeign {
      * @return
      */
     @GetMapping("/createHtml/{id}")
+    @ResponseBody
     Result createHtml(@PathVariable("id") Long spuId);
 }

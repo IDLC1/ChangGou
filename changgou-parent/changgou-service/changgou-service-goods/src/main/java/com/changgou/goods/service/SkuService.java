@@ -1,6 +1,5 @@
 package com.changgou.goods.service;
 
-import com.changgou.common.entity.Result;
 import com.changgou.goods.pojo.Sku;
 import com.github.pagehelper.PageInfo;
 

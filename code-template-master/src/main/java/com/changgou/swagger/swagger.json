@@ -1,0 +1,6424 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "微服务工程代码生成器,生成Dao、Service、Controller、Pojo、Feign、Swagger的JSON脚本",
+    "version": "1.0.0",
+    "title": "深圳黑马训练营代码生成器",
+    "termsOfService": "https://github.com/shenkunlin/code-template.git",
+    "contact": {
+      "email": "shenkunlin@itcast.cn"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
+  "tags": [
+        {
+      "name": "AlbumController",
+      "description": "AlbumController"
+    },
+    {
+      "name": "AlbumController",
+      "description": "AlbumController"
+    },
+    {
+      "name": "AlbumController",
+      "description": "AlbumController"
+    },
+    {
+      "name": "AlbumController",
+      "description": "AlbumController"
+    },
+    {
+      "name": "BrandController",
+      "description": "BrandController"
+    },
+    {
+      "name": "BrandController",
+      "description": "BrandController"
+    },
+    {
+      "name": "BrandController",
+      "description": "BrandController"
+    },
+    {
+      "name": "BrandController",
+      "description": "BrandController"
+    },
+    {
+      "name": "CategoryController",
+      "description": "CategoryController"
+    },
+    {
+      "name": "CategoryController",
+      "description": "CategoryController"
+    },
+    {
+      "name": "CategoryController",
+      "description": "CategoryController"
+    },
+    {
+      "name": "CategoryController",
+      "description": "CategoryController"
+    },
+    {
+      "name": "CategoryBrandController",
+      "description": "CategoryBrandController"
+    },
+    {
+      "name": "CategoryBrandController",
+      "description": "CategoryBrandController"
+    },
+    {
+      "name": "CategoryBrandController",
+      "description": "CategoryBrandController"
+    },
+    {
+      "name": "CategoryBrandController",
+      "description": "CategoryBrandController"
+    },
+    {
+      "name": "ParaController",
+      "description": "ParaController"
+    },
+    {
+      "name": "ParaController",
+      "description": "ParaController"
+    },
+    {
+      "name": "ParaController",
+      "description": "ParaController"
+    },
+    {
+      "name": "ParaController",
+      "description": "ParaController"
+    },
+    {
+      "name": "PrefController",
+      "description": "PrefController"
+    },
+    {
+      "name": "PrefController",
+      "description": "PrefController"
+    },
+    {
+      "name": "PrefController",
+      "description": "PrefController"
+    },
+    {
+      "name": "PrefController",
+      "description": "PrefController"
+    },
+    {
+      "name": "SkuController",
+      "description": "SkuController"
+    },
+    {
+      "name": "SkuController",
+      "description": "SkuController"
+    },
+    {
+      "name": "SkuController",
+      "description": "SkuController"
+    },
+    {
+      "name": "SkuController",
+      "description": "SkuController"
+    },
+    {
+      "name": "SpecController",
+      "description": "SpecController"
+    },
+    {
+      "name": "SpecController",
+      "description": "SpecController"
+    },
+    {
+      "name": "SpecController",
+      "description": "SpecController"
+    },
+    {
+      "name": "SpecController",
+      "description": "SpecController"
+    },
+    {
+      "name": "SpuController",
+      "description": "SpuController"
+    },
+    {
+      "name": "SpuController",
+      "description": "SpuController"
+    },
+    {
+      "name": "SpuController",
+      "description": "SpuController"
+    },
+    {
+      "name": "SpuController",
+      "description": "SpuController"
+    },
+    {
+      "name": "StockBackController",
+      "description": "StockBackController"
+    },
+    {
+      "name": "StockBackController",
+      "description": "StockBackController"
+    },
+    {
+      "name": "StockBackController",
+      "description": "StockBackController"
+    },
+    {
+      "name": "StockBackController",
+      "description": "StockBackController"
+    },
+    {
+      "name": "TemplateController",
+      "description": "TemplateController"
+    },
+    {
+      "name": "TemplateController",
+      "description": "TemplateController"
+    },
+    {
+      "name": "TemplateController",
+      "description": "TemplateController"
+    },
+    {
+      "name": "TemplateController",
+      "description": "TemplateController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    },
+    {
+      "name": "UndoLogController",
+      "description": "UndoLogController"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/album": {
+      "get": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Album",
+        "description": "鏌ヨ鎵�鏈�Album鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Album禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "娣诲姞Album",
+        "description": "娣诲姞Album鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Album鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Album"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/album/{id}": {
+      "delete": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Album",
+        "description": "鏍规嵁ID鍒犻櫎Album鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Album鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "鏍规嵁ID淇敼Album",
+        "description": "鏍规嵁ID淇敼Album鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Album鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Album",
+            "description": "浼犲叆Album鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Album"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨAlbum",
+        "description": "鏍规嵁ID鏌ヨAlbum鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Album鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Album禄"
+            }
+          }
+        }
+      }
+    },
+    "/album/search": {
+      "post": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Album",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Album鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Album",
+            "description": "浼犲叆Album鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Album"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Album禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/album/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨAlbum",
+        "description": "鍒嗛〉鍒楄〃鏌ヨAlbum鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Album禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AlbumController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Album",
+        "description": "鍒嗛〉鏉′欢鎼滅储Album鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Album",
+            "description": "浼犲叆Album鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Album"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Album"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Album禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/brand": {
+      "get": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Brand",
+        "description": "鏌ヨ鎵�鏈�Brand鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Brand禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "娣诲姞Brand",
+        "description": "娣诲姞Brand鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Brand鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Brand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/brand/{id}": {
+      "delete": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Brand",
+        "description": "鏍规嵁ID鍒犻櫎Brand鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Brand鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "鏍规嵁ID淇敼Brand",
+        "description": "鏍规嵁ID淇敼Brand鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Brand鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Brand",
+            "description": "浼犲叆Brand鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Brand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨBrand",
+        "description": "鏍规嵁ID鏌ヨBrand鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Brand鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Brand禄"
+            }
+          }
+        }
+      }
+    },
+    "/brand/search": {
+      "post": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Brand",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Brand鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Brand",
+            "description": "浼犲叆Brand鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Brand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Brand禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/brand/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨBrand",
+        "description": "鍒嗛〉鍒楄〃鏌ヨBrand鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Brand禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BrandController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Brand",
+        "description": "鍒嗛〉鏉′欢鎼滅储Brand鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Brand",
+            "description": "浼犲叆Brand鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Brand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Brand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Brand禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/category": {
+      "get": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Category",
+        "description": "鏌ヨ鎵�鏈�Category鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Category禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "娣诲姞Category",
+        "description": "娣诲姞Category鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Category鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Category"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/category/{id}": {
+      "delete": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Category",
+        "description": "鏍规嵁ID鍒犻櫎Category鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Category鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "鏍规嵁ID淇敼Category",
+        "description": "鏍规嵁ID淇敼Category鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Category鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Category",
+            "description": "浼犲叆Category鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Category"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨCategory",
+        "description": "鏍规嵁ID鏌ヨCategory鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Category鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Category禄"
+            }
+          }
+        }
+      }
+    },
+    "/category/search": {
+      "post": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Category",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Category鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Category",
+            "description": "浼犲叆Category鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Category"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Category禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/category/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨCategory",
+        "description": "鍒嗛〉鍒楄〃鏌ヨCategory鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Category禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CategoryController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Category",
+        "description": "鍒嗛〉鏉′欢鎼滅储Category鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Category",
+            "description": "浼犲叆Category鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Category"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Category"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Category禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/categoryBrand": {
+      "get": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�CategoryBrand",
+        "description": "鏌ヨ鎵�鏈�CategoryBrand鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦CategoryBrand禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "娣诲姞CategoryBrand",
+        "description": "娣诲姞CategoryBrand鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞CategoryBrand鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/CategoryBrand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/categoryBrand/{id}": {
+      "delete": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎CategoryBrand",
+        "description": "鏍规嵁ID鍒犻櫎CategoryBrand鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎CategoryBrand鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "鏍规嵁ID淇敼CategoryBrand",
+        "description": "鏍规嵁ID淇敼CategoryBrand鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼CategoryBrand鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "CategoryBrand",
+            "description": "浼犲叆CategoryBrand鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/CategoryBrand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨCategoryBrand",
+        "description": "鏍规嵁ID鏌ヨCategoryBrand鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼CategoryBrand鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦CategoryBrand禄"
+            }
+          }
+        }
+      }
+    },
+    "/categoryBrand/search": {
+      "post": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储CategoryBrand",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储CategoryBrand鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "CategoryBrand",
+            "description": "浼犲叆CategoryBrand鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/CategoryBrand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦CategoryBrand禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/categoryBrand/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨCategoryBrand",
+        "description": "鍒嗛〉鍒楄〃鏌ヨCategoryBrand鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦CategoryBrand禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CategoryBrandController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储CategoryBrand",
+        "description": "鍒嗛〉鏉′欢鎼滅储CategoryBrand鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "CategoryBrand",
+            "description": "浼犲叆CategoryBrand鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/CategoryBrand"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储CategoryBrand"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦CategoryBrand禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/para": {
+      "get": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Para",
+        "description": "鏌ヨ鎵�鏈�Para鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Para禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "娣诲姞Para",
+        "description": "娣诲姞Para鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Para鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Para"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/para/{id}": {
+      "delete": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Para",
+        "description": "鏍规嵁ID鍒犻櫎Para鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Para鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "鏍规嵁ID淇敼Para",
+        "description": "鏍规嵁ID淇敼Para鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Para鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Para",
+            "description": "浼犲叆Para鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Para"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨPara",
+        "description": "鏍规嵁ID鏌ヨPara鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Para鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Para禄"
+            }
+          }
+        }
+      }
+    },
+    "/para/search": {
+      "post": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Para",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Para鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Para",
+            "description": "浼犲叆Para鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Para"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Para禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/para/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨPara",
+        "description": "鍒嗛〉鍒楄〃鏌ヨPara鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Para禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ParaController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Para",
+        "description": "鍒嗛〉鏉′欢鎼滅储Para鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Para",
+            "description": "浼犲叆Para鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Para"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Para"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Para禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/pref": {
+      "get": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Pref",
+        "description": "鏌ヨ鎵�鏈�Pref鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Pref禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "娣诲姞Pref",
+        "description": "娣诲姞Pref鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Pref鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Pref"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/pref/{id}": {
+      "delete": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Pref",
+        "description": "鏍规嵁ID鍒犻櫎Pref鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Pref鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "鏍规嵁ID淇敼Pref",
+        "description": "鏍规嵁ID淇敼Pref鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Pref鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Pref",
+            "description": "浼犲叆Pref鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Pref"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨPref",
+        "description": "鏍规嵁ID鏌ヨPref鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Pref鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Pref禄"
+            }
+          }
+        }
+      }
+    },
+    "/pref/search": {
+      "post": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Pref",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Pref鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Pref",
+            "description": "浼犲叆Pref鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Pref"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Pref禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/pref/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨPref",
+        "description": "鍒嗛〉鍒楄〃鏌ヨPref鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Pref禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PrefController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Pref",
+        "description": "鍒嗛〉鏉′欢鎼滅储Pref鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Pref",
+            "description": "浼犲叆Pref鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Pref"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Pref"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Pref禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/sku": {
+      "get": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Sku",
+        "description": "鏌ヨ鎵�鏈�Sku鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Sku禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "娣诲姞Sku",
+        "description": "娣诲姞Sku鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Sku鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Sku"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/sku/{id}": {
+      "delete": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Sku",
+        "description": "鏍规嵁ID鍒犻櫎Sku鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Sku鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "鏍规嵁ID淇敼Sku",
+        "description": "鏍规嵁ID淇敼Sku鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Sku鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Sku",
+            "description": "浼犲叆Sku鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Sku"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨSku",
+        "description": "鏍规嵁ID鏌ヨSku鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Sku鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Sku禄"
+            }
+          }
+        }
+      }
+    },
+    "/sku/search": {
+      "post": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Sku",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Sku鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Sku",
+            "description": "浼犲叆Sku鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Sku"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Sku禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/sku/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨSku",
+        "description": "鍒嗛〉鍒楄〃鏌ヨSku鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Sku禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SkuController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Sku",
+        "description": "鍒嗛〉鏉′欢鎼滅储Sku鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Sku",
+            "description": "浼犲叆Sku鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Sku"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Sku"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Sku禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/spec": {
+      "get": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Spec",
+        "description": "鏌ヨ鎵�鏈�Spec鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spec禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "娣诲姞Spec",
+        "description": "娣诲姞Spec鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Spec鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spec"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/spec/{id}": {
+      "delete": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Spec",
+        "description": "鏍规嵁ID鍒犻櫎Spec鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Spec鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "鏍规嵁ID淇敼Spec",
+        "description": "鏍规嵁ID淇敼Spec鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Spec鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Spec",
+            "description": "浼犲叆Spec鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spec"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨSpec",
+        "description": "鏍规嵁ID鏌ヨSpec鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Spec鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Spec禄"
+            }
+          }
+        }
+      }
+    },
+    "/spec/search": {
+      "post": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Spec",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Spec鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Spec",
+            "description": "浼犲叆Spec鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spec"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spec禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/spec/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨSpec",
+        "description": "鍒嗛〉鍒楄〃鏌ヨSpec鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spec禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SpecController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Spec",
+        "description": "鍒嗛〉鏉′欢鎼滅储Spec鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Spec",
+            "description": "浼犲叆Spec鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spec"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Spec"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spec禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/spu": {
+      "get": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Spu",
+        "description": "鏌ヨ鎵�鏈�Spu鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spu禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "娣诲姞Spu",
+        "description": "娣诲姞Spu鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Spu鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spu"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/spu/{id}": {
+      "delete": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Spu",
+        "description": "鏍规嵁ID鍒犻櫎Spu鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Spu鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "鏍规嵁ID淇敼Spu",
+        "description": "鏍规嵁ID淇敼Spu鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Spu鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Spu",
+            "description": "浼犲叆Spu鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spu"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨSpu",
+        "description": "鏍规嵁ID鏌ヨSpu鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Spu鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Spu禄"
+            }
+          }
+        }
+      }
+    },
+    "/spu/search": {
+      "post": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Spu",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Spu鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Spu",
+            "description": "浼犲叆Spu鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spu"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spu禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/spu/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨSpu",
+        "description": "鍒嗛〉鍒楄〃鏌ヨSpu鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spu禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SpuController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Spu",
+        "description": "鍒嗛〉鏉′欢鎼滅储Spu鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Spu",
+            "description": "浼犲叆Spu鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Spu"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Spu"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Spu禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/stockBack": {
+      "get": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�StockBack",
+        "description": "鏌ヨ鎵�鏈�StockBack鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦StockBack禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "娣诲姞StockBack",
+        "description": "娣诲姞StockBack鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞StockBack鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/StockBack"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/stockBack/{id}": {
+      "delete": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎StockBack",
+        "description": "鏍规嵁ID鍒犻櫎StockBack鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎StockBack鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "鏍规嵁ID淇敼StockBack",
+        "description": "鏍规嵁ID淇敼StockBack鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼StockBack鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "StockBack",
+            "description": "浼犲叆StockBack鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/StockBack"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨStockBack",
+        "description": "鏍规嵁ID鏌ヨStockBack鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼StockBack鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦StockBack禄"
+            }
+          }
+        }
+      }
+    },
+    "/stockBack/search": {
+      "post": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储StockBack",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储StockBack鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "StockBack",
+            "description": "浼犲叆StockBack鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/StockBack"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦StockBack禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/stockBack/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨStockBack",
+        "description": "鍒嗛〉鍒楄〃鏌ヨStockBack鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦StockBack禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "StockBackController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储StockBack",
+        "description": "鍒嗛〉鏉′欢鎼滅储StockBack鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "StockBack",
+            "description": "浼犲叆StockBack鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/StockBack"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储StockBack"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦StockBack禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/template": {
+      "get": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�Template",
+        "description": "鏌ヨ鎵�鏈�Template鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Template禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "娣诲姞Template",
+        "description": "娣诲姞Template鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞Template鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Template"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/template/{id}": {
+      "delete": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎Template",
+        "description": "鏍规嵁ID鍒犻櫎Template鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎Template鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "鏍规嵁ID淇敼Template",
+        "description": "鏍规嵁ID淇敼Template鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Template鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Template",
+            "description": "浼犲叆Template鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Template"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨTemplate",
+        "description": "鏍规嵁ID鏌ヨTemplate鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼Template鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦Template禄"
+            }
+          }
+        }
+      }
+    },
+    "/template/search": {
+      "post": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Template",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储Template鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Template",
+            "description": "浼犲叆Template鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Template"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Template禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/template/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨTemplate",
+        "description": "鍒嗛〉鍒楄〃鏌ヨTemplate鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Template禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TemplateController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储Template",
+        "description": "鍒嗛〉鏉′欢鎼滅储Template鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Template",
+            "description": "浼犲叆Template鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Template"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储Template"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦Template禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog": {
+      "get": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "鏌ヨ鎵�鏈�UndoLog",
+        "description": "鏌ヨ鎵�鏈�UndoLog鏂规硶璇︽儏",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏌ヨ鎵�鏈�UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦UndoLog禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "娣诲姞UndoLog",
+        "description": "娣诲姞UndoLog鏂规硶璇︽儏",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "娣诲姞UndoLog鏂规硶璇︽儏",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "娣诲姞UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog/{id}": {
+      "delete": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "鏍规嵁ID鍒犻櫎UndoLog",
+        "description": "鏍规嵁ID鍒犻櫎UndoLog鏂规硶璇︽儏",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID鍒犻櫎UndoLog鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID鍒犻櫎UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "鏍规嵁ID淇敼UndoLog",
+        "description": "鏍规嵁ID淇敼UndoLog鏂规硶璇︽儏",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼UndoLog鏂规硶璇︽儏",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "UndoLog",
+            "description": "浼犲叆UndoLog鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "鏍规嵁ID鏌ヨUndoLog",
+        "description": "鏍规嵁ID鏌ヨUndoLog鏂规硶璇︽儏",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "鏍规嵁ID淇敼UndoLog鏂规硶璇︽儏",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鏍规嵁ID淇敼UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦UndoLog禄"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog/search": {
+      "post": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "涓嶅甫鍒嗛〉鏉′欢鎼滅储UndoLog",
+        "description": "涓嶅甫鍒嗛〉鏉′欢鎼滅储UndoLog鏂规硶璇︽儏",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "UndoLog",
+            "description": "浼犲叆UndoLog鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦UndoLog禄禄"
+            }
+          }
+        }
+      }
+    },
+    "/undoLog/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "鍒嗛〉鍒楄〃鏌ヨUndoLog",
+        "description": "鍒嗛〉鍒楄〃鏌ヨUndoLog鏂规硶璇︽儏",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "涓嶅甫鍒嗛〉鎼滅储UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦UndoLog禄禄"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UndoLogController"
+        ],
+        "summary": "鍒嗛〉鏉′欢鎼滅储UndoLog",
+        "description": "鍒嗛〉鏉′欢鎼滅储UndoLog鏂规硶璇︽儏",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "褰撳墠椤�",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "姣忛〉鏄剧ず鏉℃暟",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "UndoLog",
+            "description": "浼犲叆UndoLog鐨凧SON瀵硅薄",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/UndoLog"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(鏃犳晥鐨勭姸鎬佸��)"
+                      },
+          "403": {
+            "description": "403 Forbidden(璇锋眰琚嫆缁�)"
+                      },
+          "404": {
+            "description": "not found(娌℃湁鎵惧埌鐩稿叧璧勬簮)"
+                      },
+          "405": {
+            "description": "Invalid input(鏃犳晥鐨勮緭鍏�)"
+                      },
+          "500": {
+            "description": "鏈嶅姟鍣ㄥ唴閮ㄩ敊璇�"
+                      },
+          "200": {
+            "description": "鍒嗛〉鏉′欢鎼滅储UndoLog"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result芦List芦UndoLog禄禄"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Result": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "object",
+          "description": "逻辑数据"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«List«Album»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Album"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Album»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Album"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Album": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "编号"
+        },
+        "title": {
+          "type": "string",
+          "description": "相册名称"
+        },
+        "image": {
+          "type": "string",
+          "description": "相册封面"
+        },
+        "imageItems": {
+          "type": "string",
+          "description": "图片列表"
+        }
+      },
+      "description": "Album"
+    },
+    "Result«List«Brand»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Brand"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Brand»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Brand"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Brand": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "品牌id"
+        },
+        "name": {
+          "type": "string",
+          "description": "品牌名称"
+        },
+        "image": {
+          "type": "string",
+          "description": "品牌图片地址"
+        },
+        "letter": {
+          "type": "string",
+          "description": "品牌的首字母"
+        },
+        "seq": {
+          "type": "integer",
+          "format": "int32",
+          "description": "排序"
+        }
+      },
+      "description": "Brand"
+    },
+    "Result«List«Category»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Category"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Category»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Category"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Category": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "分类ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "分类名称"
+        },
+        "goodsNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "商品数量"
+        },
+        "isShow": {
+          "type": "string",
+          "description": "是否显示"
+        },
+        "isMenu": {
+          "type": "string",
+          "description": "是否导航"
+        },
+        "seq": {
+          "type": "integer",
+          "format": "int32",
+          "description": "排序"
+        },
+        "parentId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "上级ID"
+        },
+        "templateId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "模板ID"
+        }
+      },
+      "description": "Category"
+    },
+    "Result«List«CategoryBrand»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/CategoryBrand"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«CategoryBrand»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/CategoryBrand"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "CategoryBrand": {
+      "type": "object",
+      "properties": {
+        "categoryId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "分类ID"
+        },
+        "brandId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "品牌ID"
+        }
+      },
+      "description": "CategoryBrand"
+    },
+    "Result«List«Para»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Para"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Para»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Para"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Para": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "id"
+        },
+        "name": {
+          "type": "string",
+          "description": "名称"
+        },
+        "options": {
+          "type": "string",
+          "description": "选项"
+        },
+        "seq": {
+          "type": "integer",
+          "format": "int32",
+          "description": "排序"
+        },
+        "templateId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "模板ID"
+        }
+      },
+      "description": "Para"
+    },
+    "Result«List«Pref»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Pref"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Pref»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Pref"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Pref": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "ID"
+        },
+        "cateId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "分类ID"
+        },
+        "buyMoney": {
+          "type": "integer",
+          "format": "int32",
+          "description": "消费金额"
+        },
+        "preMoney": {
+          "type": "integer",
+          "format": "int32",
+          "description": "优惠金额"
+        },
+        "startTime": {
+          "type": "date",
+          "description": "活动开始日期"
+        },
+        "endTime": {
+          "type": "date",
+          "description": "活动截至日期"
+        },
+        "type": {
+          "type": "string",
+          "description": "类型,1:普通订单，2：限时活动"
+        },
+        "state": {
+          "type": "string",
+          "description": "状态,1:有效，0：无效"
+        }
+      },
+      "description": "Pref"
+    },
+    "Result«List«Sku»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Sku"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Sku»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Sku"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Sku": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "商品id"
+        },
+        "sn": {
+          "type": "string",
+          "description": "商品条码"
+        },
+        "name": {
+          "type": "string",
+          "description": "SKU名称"
+        },
+        "price": {
+          "type": "integer",
+          "format": "int32",
+          "description": "价格（分）"
+        },
+        "num": {
+          "type": "integer",
+          "format": "int32",
+          "description": "库存数量"
+        },
+        "alertNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "库存预警数量"
+        },
+        "image": {
+          "type": "string",
+          "description": "商品图片"
+        },
+        "images": {
+          "type": "string",
+          "description": "商品图片列表"
+        },
+        "weight": {
+          "type": "integer",
+          "format": "int32",
+          "description": "重量（克）"
+        },
+        "createTime": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "updateTime": {
+          "type": "date",
+          "description": "更新时间"
+        },
+        "spuId": {
+          "type": "long",
+          "description": "SPUID"
+        },
+        "categoryId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "类目ID"
+        },
+        "categoryName": {
+          "type": "string",
+          "description": "类目名称"
+        },
+        "brandName": {
+          "type": "string",
+          "description": "品牌名称"
+        },
+        "spec": {
+          "type": "string",
+          "description": "规格"
+        },
+        "saleNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "销量"
+        },
+        "commentNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "评论数"
+        },
+        "status": {
+          "type": "string",
+          "description": "商品状态 1-正常，2-下架，3-删除"
+        }
+      },
+      "description": "Sku"
+    },
+    "Result«List«Spec»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Spec"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Spec»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Spec"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Spec": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "名称"
+        },
+        "options": {
+          "type": "string",
+          "description": "规格选项"
+        },
+        "seq": {
+          "type": "integer",
+          "format": "int32",
+          "description": "排序"
+        },
+        "templateId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "模板ID"
+        }
+      },
+      "description": "Spec"
+    },
+    "Result«List«Spu»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Spu"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Spu»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Spu"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Spu": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键"
+        },
+        "sn": {
+          "type": "string",
+          "description": "货号"
+        },
+        "name": {
+          "type": "string",
+          "description": "SPU名"
+        },
+        "caption": {
+          "type": "string",
+          "description": "副标题"
+        },
+        "brandId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "品牌ID"
+        },
+        "category1Id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "一级分类"
+        },
+        "category2Id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "二级分类"
+        },
+        "category3Id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "三级分类"
+        },
+        "templateId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "模板ID"
+        },
+        "freightId": {
+          "type": "integer",
+          "format": "int32",
+          "description": "运费模板id"
+        },
+        "image": {
+          "type": "string",
+          "description": "图片"
+        },
+        "images": {
+          "type": "string",
+          "description": "图片列表"
+        },
+        "saleService": {
+          "type": "string",
+          "description": "售后服务"
+        },
+        "introduction": {
+          "type": "string",
+          "description": "介绍"
+        },
+        "specItems": {
+          "type": "string",
+          "description": "规格列表"
+        },
+        "paraItems": {
+          "type": "string",
+          "description": "参数列表"
+        },
+        "saleNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "销量"
+        },
+        "commentNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "评论数"
+        },
+        "isMarketable": {
+          "type": "string",
+          "description": "是否上架,0已下架，1已上架"
+        },
+        "isEnableSpec": {
+          "type": "string",
+          "description": "是否启用规格"
+        },
+        "isDelete": {
+          "type": "string",
+          "description": "是否删除,0:未删除，1：已删除"
+        },
+        "status": {
+          "type": "string",
+          "description": "审核状态，0：未审核，1：已审核，2：审核不通过"
+        }
+      },
+      "description": "Spu"
+    },
+    "Result«List«StockBack»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/StockBack"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«StockBack»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/StockBack"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "StockBack": {
+      "type": "object",
+      "properties": {
+        "orderId": {
+          "type": "string",
+          "description": "订单id"
+        },
+        "skuId": {
+          "type": "string",
+          "description": "SKU的id"
+        },
+        "num": {
+          "type": "integer",
+          "format": "int32",
+          "description": "回滚数量"
+        },
+        "status": {
+          "type": "string",
+          "description": "回滚状态"
+        },
+        "createTime": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "backTime": {
+          "type": "date",
+          "description": "回滚时间"
+        }
+      },
+      "description": "StockBack"
+    },
+    "Result«List«Template»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Template"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«Template»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Template"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Template": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": "ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "模板名称"
+        },
+        "specNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "规格数量"
+        },
+        "paraNum": {
+          "type": "integer",
+          "format": "int32",
+          "description": "参数数量"
+        }
+      },
+      "description": "Template"
+    },
+    "Result«List«UndoLog»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/UndoLog"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«UndoLog»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/UndoLog"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "UndoLog": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": ""
+        },
+        "branchId": {
+          "type": "long",
+          "description": ""
+        },
+        "xid": {
+          "type": "string",
+          "description": ""
+        },
+        "rollbackInfo": {
+          "type": "string",
+          "description": ""
+        },
+        "logStatus": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "logCreated": {
+          "type": "date",
+          "description": ""
+        },
+        "logModified": {
+          "type": "date",
+          "description": ""
+        },
+        "ext": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "UndoLog"
+    }
+  },
+  "externalDocs": {
+    "description": "黑马训练营畅购微服务商城(http://www.itheima.com)",
+    "url": "https://github.com/shenkunlin/code-template.git"
+  }
+}

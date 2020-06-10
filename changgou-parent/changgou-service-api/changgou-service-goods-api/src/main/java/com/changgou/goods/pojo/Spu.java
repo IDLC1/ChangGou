@@ -90,21 +90,21 @@ public class Spu implements Serializable{
     @Column(name = "comment_num")
 	private Integer commentNum;//评论数
 
-	@ApiModelProperty(value = "是否上架",required = false)
+	@ApiModelProperty(value = "是否上架,0已下架，1已上架",required = false)
     @Column(name = "is_marketable")
-	private String isMarketable;//是否上架
+	private String isMarketable;//是否上架,0已下架，1已上架
 
 	@ApiModelProperty(value = "是否启用规格",required = false)
     @Column(name = "is_enable_spec")
 	private String isEnableSpec;//是否启用规格
 
-	@ApiModelProperty(value = "是否删除",required = false)
+	@ApiModelProperty(value = "是否删除,0:未删除，1：已删除",required = false)
     @Column(name = "is_delete")
-	private String isDelete;//是否删除
+	private String isDelete;//是否删除,0:未删除，1：已删除
 
-	@ApiModelProperty(value = "审核状态",required = false)
+	@ApiModelProperty(value = "审核状态，0：未审核，1：已审核，2：审核不通过",required = false)
     @Column(name = "status")
-	private String status;//审核状态
+	private String status;//审核状态，0：未审核，1：已审核，2：审核不通过
 
 
 

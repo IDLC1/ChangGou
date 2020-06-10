@@ -1,17 +1,15 @@
 package com.changgou.search.service.impl;
 
+import com.changgou.goods.pojo.Sku;
 import com.changgou.search.pojo.SkuInfo;
 import com.alibaba.fastjson.JSON;
 import com.changgou.common.entity.Result;
 import com.changgou.goods.feign.SkuFeign;
-import com.changgou.goods.pojo.Sku;
 import com.changgou.search.dao.SkuEsMapper;
 import com.changgou.search.service.SkuService;
-import io.swagger.models.auth.In;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.common.text.Text;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.aggregations.AggregationBuilders;

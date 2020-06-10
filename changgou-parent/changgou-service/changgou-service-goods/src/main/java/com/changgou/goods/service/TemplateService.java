@@ -2,6 +2,7 @@ package com.changgou.goods.service;
 
 import com.changgou.goods.pojo.Template;
 import com.github.pagehelper.PageInfo;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
