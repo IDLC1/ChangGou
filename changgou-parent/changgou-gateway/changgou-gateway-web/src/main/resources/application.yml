@@ -10,7 +10,7 @@ spring:
   application:
     name: gateway-web
   redis:
-    host: 192.168.47.142
+    host: 192.168.234.135
     port: 6379
   cloud:
     gateway:
@@ -25,27 +25,39 @@ spring:
               - PUT
               - DELETE
       routes:
-           # 唯一标识符
-           - id: changgou_goods-route
-             # 用户请求需要路由到该服务[指定要路由的服务]
-#             uri: http://localhost:18081
-             uri: lb://goods
-             # 路由断言，路由规则配置
-             # lb 使用LoadBalancerClient 实现负载均衡，后面的goods是微服务的名称
-             predicates:
-             # 用户请求的域名规则配置，所有以 cloud.tom.com 的请求都会被路由到上面uri所指的为止去
-#             - Host=cloud.tom.com**
-#             - Path=/api/brand/**
-             - Path=/**
-             filters:
-               # 将请求路径中的第一个路径去掉，请求路径以/区分
-               - StripPrefix=1
-#                - PrefixPath=/brand
-               - name: RequestRateLimiter #局部显示流过滤，名字不能随便写
-                 args:
-                   key-resolver: "#{@ipKeyResolver}" # 用户身份唯一识别标识符
-                   redis-rate-limiter.replenishRate: 1 #令牌桶每秒填充平均速率
-                   redis-rate-limiter.burstCapacity: 1 #令牌桶总容量
+        # 唯一标识符
+        - id: changgou_goods_route
+          # 用户请求需要路由到该服务[指定要路由的服务]
+          #             uri: http://localhost:18081
+          uri: lb://goods
+          # 路由断言，路由规则配置
+          # lb 使用LoadBalancerClient 实现负载均衡，后面的goods是微服务的名称
+          predicates:
+            # 用户请求的域名规则配置，所有以 cloud.tom.com 的请求都会被路由到上面uri所指的为止去
+            #             - Host=cloud.tom.com**
+            #             - Path=/api/brand/**
+            - Path=/api/goods/**
+          filters:
+            # 将请求路径中的第一个路径去掉，请求路径以/区分
+            - StripPrefix=2
+            #                - PrefixPath=/brand
+            - name: RequestRateLimiter #局部显示流过滤，名字不能随便写
+              args:
+                key-resolver: "#{@ipKeyResolver}" # 用户身份唯一识别标识符
+                redis-rate-limiter.replenishRate: 5 #令牌桶每秒填充平均速率
+                redis-rate-limiter.burstCapacity: 10 #令牌桶总容量
+        # 唯一标识符
+        - id: changgou_user_route
+          uri: lb://user
+          predicates:
+            - Path=/api/address/**,/api/ares/**,/api/cities/**,/api/provinces/**,/api/user/**
+          filters:
+            - StripPrefix=1
+            - name: RequestRateLimiter #局部显示流过滤，名字不能随便写
+              args:
+                key-resolver: "#{@ipKeyResolver}" # 用户身份唯一识别标识符
+                redis-rate-limiter.replenishRate: 5 #令牌桶每秒填充平均速率
+                redis-rate-limiter.burstCapacity: 10 #令牌桶总容量
 management:
   endpoint:
     gateway:

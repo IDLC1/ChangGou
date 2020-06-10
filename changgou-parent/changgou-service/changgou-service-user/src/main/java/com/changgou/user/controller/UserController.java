@@ -2,6 +2,7 @@ package com.changgou.user.controller;
 
 import com.changgou.common.entity.Result;
 import com.changgou.common.entity.StatusCode;
+import com.changgou.common.utils.BCrypt;
 import com.changgou.user.pojo.User;
 import com.changgou.user.service.UserService;
 import com.github.pagehelper.PageInfo;
@@ -24,6 +25,25 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
+    @GetMapping("/login")
+    public Result login(String username, String password) {
+        // 查询用户信息
+        User user = userService.findById(username);
+        // 对比密码
+        if (BCrypt.checkpw(password, user.getPassword())) {
+            return Result.ok("登录成功", user);
+        }
+        // 密码匹配失败，登录失败
+        return Result.error("账号或密码有误");
+    }
+
 
     /***
      * User分页条件搜索实现
