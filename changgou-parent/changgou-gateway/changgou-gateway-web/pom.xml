@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <description>普通web请求网关</description>
+
     <artifactId>changgou-gateway-web</artifactId>
 
 
