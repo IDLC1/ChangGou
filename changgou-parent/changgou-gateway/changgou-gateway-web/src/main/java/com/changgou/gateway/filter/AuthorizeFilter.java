@@ -1,7 +1,6 @@
 package com.changgou.gateway.filter;
 
 import com.changgou.gateway.utils.JwtUtil;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -21,7 +20,6 @@ import reactor.core.publisher.Mono;
  * @Description: 全局过滤器，实现用户权限鉴别（校验）
  **/
 @Component
-@Slf4j
 public class AuthorizeFilter implements GlobalFilter, Ordered {
 
     private static final String AUTHORIZE_TOKEN = "Authorization";
@@ -40,19 +38,19 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         // 获取用户令牌信息
         // 1. 从 Header 中获取
         String token = request.getHeaders().getFirst(AUTHORIZE_TOKEN);
-        log.info("从头部中获取");
+        Boolean isInHeader = true;
 
         // 2. 从 参数 中获取
         if (StringUtils.isEmpty(token)) {
             token = request.getQueryParams().getFirst(AUTHORIZE_TOKEN);
-            log.info("从参数中获取");
+            isInHeader = false;
         }
         // 3. 从 Cookie 中获取
         if (StringUtils.isEmpty(token)) {
             HttpCookie httpCookie = request.getCookies().getFirst(AUTHORIZE_TOKEN);
             if(httpCookie != null) {
                 token = httpCookie.getValue();
-                log.info("从Cookie中获取");
+                isInHeader = false;
             }
         }
 
@@ -67,12 +65,17 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         try {
             // 解析成功，则放行
             JwtUtil.parseJWT(token);
-            return chain.filter(exchange);
         } catch (Exception e) {
             // 无效则拦截
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
         }
+
+        // 将令牌封装到头文件中
+        if (isInHeader) {
+            request.mutate().header(AUTHORIZE_TOKEN, token);
+        }
+        return chain.filter(exchange);
     }
 
     @Override
